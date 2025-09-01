@@ -18,6 +18,16 @@
         ☰
       </button>
 
+      <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("open"); // optional if you want animation
+        });
+      </script>
+
       <nav class="nav-links" id="nav-links">
         <a href="#">Home</a>
         <a href="#">About Us</a>

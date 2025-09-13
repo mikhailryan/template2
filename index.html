@@ -8,40 +8,26 @@
 </head>
 <body class="font-sans text-gray-800">
 
-  <!-- Navbar -->
   <header class="navbar">
     <div class="container nav-inner">
       <div class="logo">Femine</div>
 
-      <!-- Hamburger Button -->
       <button class="hamburger" id="hamburger">
         ☰
       </button>
 
-      <script>
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.getElementById("nav-links");
-
-        hamburger.addEventListener("click", () => {
-          navLinks.classList.toggle("active");
-          hamburger.classList.toggle("open"); // optional if you want animation
-        });
-      </script>
-
       <nav class="nav-links" id="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Pages</a>
-        <a href="#">Contact Us</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#pages">Pages</a>
+        <a href="#contact">Contact Us</a>
       </nav>
     </div>
   </header> 
 
-  <!-- Hero -->
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="container hero-inner">
-      <!-- Left -->
       <div class="hero-text">
         <h1>
           Your Personality is<br> What Makes You <br> Character
@@ -52,7 +38,6 @@
         <a href="#" class="btn">Learn More</a>
       </div>
 
-      <!-- Right -->
       <div class="hero-image-wrapper">
         <div class="color-circles hero-circles">
           <div class="circle c1"></div>
@@ -76,9 +61,8 @@
   </section>
 
   <!-- Welcome -->
-  <section class="welcome">
+  <section id="about" class="welcome">
     <div class="container welcome-inner">
-      <!-- Left Image -->
       <div class="welcome-image-wrapper">
         <div class="color-circles welcome-circles">
           <div class="circle w1"></div>
@@ -93,7 +77,6 @@
         </div>
       </div>
 
-      <!-- Text -->
       <div class="welcome-text">
         <h2>Welcome To Femine</h2>
         <p>
@@ -130,8 +113,7 @@
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="services">
+  <section id="services" class="services">
     <div class="container text-center">
       <h2>We Can Help Transform You</h2>
       <div class="services-grid">
@@ -163,8 +145,7 @@
     </div>
   </section>
 
-  <!-- Expertise -->
-  <section class="expertise">
+  <section id="expertise" class="expertise">
     <div class="container expertise-inner">
       <div class="expertise-text">
         <h2>Proving Our Expertise</h2>
